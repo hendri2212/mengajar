@@ -1,10 +1,6 @@
 <?php
     // Server Connection
-    $server = 'localhost';
-    $username = 'root';
-    $password = 'root';
-    
-    $conn   = new mysqli($server, $username, $password);
+    $conn   = new mysqli('localhost', 'root', '');
 
     $drop   = "DROP DATABASE IF EXISTS swalayan";
     $conn->query($drop);
