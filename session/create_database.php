@@ -24,9 +24,9 @@
     $conn->query("CREATE TABLE `user` (
         id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
         full_name CHAR(255),
-        username VARCHAR(255),
+        username VARCHAR(255) UNIQUE,
         password VARCHAR(255),
-        role enum('owner','admin','kasir')
+        role enum('owner','admin','kasir') NOT NULL DEFAULT 'kasir'
     )");
 
     // Insert Data Users
