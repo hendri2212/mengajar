@@ -14,6 +14,9 @@
         h2{
             color: red;
         }
+        h1{
+            color: green;
+        }
     </style>
 </head>
 <body>
@@ -23,6 +26,7 @@
     <h2>Kasir - Tampil menu penjualan saja</h2>
     <ul>
         <?php
+            echo "<h1>Selamat Datang - ".$_SESSION['nama']."</h1>";
             if ($_SESSION['role']=='admin' OR $_SESSION['role']=='owner') {
                 echo "<li>Data Barang - admin</li>";
             }
