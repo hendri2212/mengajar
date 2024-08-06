@@ -8,3 +8,4 @@
         $imagick->clear();
         $imagick->destroy();
     }
+?>
