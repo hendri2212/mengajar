@@ -16,6 +16,7 @@
     }
 
     include "connection.php";
-    include "create_table_gender.php";
     include "create_table_user.php";
+    include "create_table_hoby.php";
+    include "create_table_user_hoby.php";
 ?>
