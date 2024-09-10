@@ -5,4 +5,6 @@
         -- INDEX (gender_id),
         -- FOREIGN KEY (gender_id) REFERENCES gender(id)
     )");
+
+    mysqli_query($conn, "INSERT INTO hoby (hoby_name) VALUE ('Renang'), ('Bola Voli'), ('Sepak Bola'), ('Sepeda'), ('Badminton')");
 ?>
